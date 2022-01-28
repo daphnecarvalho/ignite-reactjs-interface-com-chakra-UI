@@ -1,0 +1,91 @@
+{
+  "continents": [
+    {
+      "id": 1,
+      "schema": "north_america",
+      "name": "América do Norte",
+      "qnt_contry": 3,
+      "qnt_language": 3
+    },
+    {
+      "id": 2,
+      "schema": "central_america",
+      "name": "América Central",
+      "qnt_contry": 7,
+      "qnt_language": 4
+    },
+    {
+      "id": 3,
+      "schema": "south_america",
+      "name": "América do Sul",
+      "qnt_contry": 13,
+      "qnt_language": 9
+    },
+    {
+      "id": 4,
+      "schema": "europe",
+      "name": "Europa",
+      "qnt_contry": 50,
+      "qnt_language": 24
+    },
+    {
+      "id": 5,
+      "schema": "asia",
+      "name": "Ásia",
+      "qnt_contry": 49,
+      "qnt_language": 2301
+    },
+    {
+      "id": 6,
+      "schema": "africa",
+      "name": "África",
+      "qnt_contry": 54,
+      "qnt_language": 2092
+    },
+    {
+      "id": 7,
+      "schema": "oceania",
+      "name": "Oceãnia",
+      "qnt_contry": 14,
+      "qnt_language": 2
+    }
+  ],
+  "north_america": [],
+  "central_america": [],
+  "south_america": [],
+  "europe": [
+    {
+      "id": 1,
+      "city": "Londres",
+      "country": "Reino Unido",
+      "flag": "GB"
+    },
+    {
+      "id": 2,
+      "city": "Paris",
+      "country": "França",
+      "flag": "FR"
+    },
+    {
+      "id": 3,
+      "city": "Londres",
+      "country": "Reino Unido",
+      "flag": "GB"
+    },
+    {
+      "id": 4,
+      "city": "Londres",
+      "country": "Reino Unido",
+      "flag": "GB"
+    },
+    {
+      "id": 5,
+      "city": "Londres",
+      "country": "Reino Unido",
+      "flag": "GB"
+    }
+  ],
+  "asia": [],
+  "africa": [],
+  "oceania": []
+}

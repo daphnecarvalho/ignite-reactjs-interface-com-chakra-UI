@@ -5,11 +5,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "server": "json-server server.json -p 3333",
     "lint": "next lint"
   },
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
     "@chakra-ui/react": "^1.8.1",
+    "axios": "^0.25.0",
+    "country-flag-icons": "^1.4.20",
     "next": "12.0.9",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -20,6 +23,7 @@
     "@types/react": "^17.0.38",
     "eslint": "8.7.0",
     "eslint-config-next": "12.0.9",
+    "json-server": "^0.17.0",
     "typescript": "^4.5.5"
   }
 }
