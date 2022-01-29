@@ -1,11 +1,7 @@
 import { GetServerSideProps } from "next";
 
 export default function Continent() {
-  return (
-    <>
-
-    </>
-  );
+  return <></>;
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
