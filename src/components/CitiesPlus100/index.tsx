@@ -15,15 +15,16 @@ export function CitiesPlus100({ cities }: CitiesPlus100Props) {
   return (
     <Box
       maxWidth={1440}
+      w="100%"
       mx="auto"
       pb="10"
-      px="24"
+      px={["6", "8", "24"]}
     >
       <Heading pb="8">Cidades +100</Heading>
 
       <SimpleGrid
         flex="1"
-        minChildWidth="256px"
+        minChildWidth={["200px", "256px"]}
         gap="6"
         columns={4}
         align="flex-start"

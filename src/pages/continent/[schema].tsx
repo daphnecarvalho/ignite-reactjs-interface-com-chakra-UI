@@ -1,3 +1,4 @@
+import { Box, Flex } from "@chakra-ui/react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import { BannerContinent } from "../../components/BannerContinent";
@@ -24,7 +25,7 @@ export default function ContinentSchema({ continent, cities }: ContinentProps) {
         <title>{ continent.title } | worldtrip</title>
       </Head>
 
-      <main>
+      <Box as="main">
         <BannerContinent schema={continent.schema} title={continent.title} />
         <ContinentInfo 
           description={continent.description}
@@ -34,7 +35,7 @@ export default function ContinentSchema({ continent, cities }: ContinentProps) {
         />
 
         <CitiesPlus100 cities={cities} />
-      </main>
+      </Box>
     </>
   );
 }

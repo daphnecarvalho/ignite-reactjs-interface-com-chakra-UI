@@ -17,12 +17,14 @@ export function ContinentInfo({
   return (
     <Flex
       maxWidth={1440}
+      w="100%"
       mx="auto"
       align="center"
       justifyContent="center"
       py="20"
-      px="100"
+      px={["6", "30", "100"]}
       gap="10"
+      direction={["column", "column", "column", "row"]}
     >
       <Flex flex="1">
         <Text textAlign="justify">
@@ -32,16 +34,16 @@ export function ContinentInfo({
       <Flex maxWidth="600">
         <HStack spacing="8">
           <Box align="center">
-            <Text fontSize="48" color="yellow.500" fontWeight="600">{qnt_country}</Text>
-            <Text fontSize="24" color="gray.600" fontWeight="600">países</Text>
+            <Text fontSize={["30", "48"]} color="yellow.500" fontWeight="600">{qnt_country}</Text>
+            <Text fontSize={["15", "24"]} color="gray.600" fontWeight="600">países</Text>
           </Box>
           <Box align="center">
-            <Text fontSize="48" color="yellow.500" fontWeight="600">{qnt_language}</Text>
-            <Text fontSize="24" color="gray.600" fontWeight="600">líguas</Text>
+            <Text fontSize={["30", "48"]} color="yellow.500" fontWeight="600">{qnt_language}</Text>
+            <Text fontSize={["15", "24"]} color="gray.600" fontWeight="600">líguas</Text>
           </Box>
           <Box align="center">
-            <Text fontSize="48" color="yellow.500" fontWeight="600">{qnt_city}</Text>
-            <Text fontSize="24" color="gray.600" fontWeight="600">
+            <Text fontSize={["30", "48"]} color="yellow.500" fontWeight="600">{qnt_city}</Text>
+            <Text fontSize={["15", "24"]} color="gray.600" fontWeight="600">
               cidades +100
               <Tooltip
                   label="100 cidades mais visitadas do mundo"

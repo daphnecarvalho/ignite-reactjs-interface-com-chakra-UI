@@ -26,7 +26,7 @@ export function Slide({ continents }: SlideProps) {
       loop={true}
       navigation
       pagination={{ clickable: true }}
-      style={{width: '100%', flex: '1', height: '100%'}}
+      style={{width: "100%", flex: '1', height: '100%'}}
     >
       {continents.map((continent) => (
         <SwiperSlide key={continent.id}>

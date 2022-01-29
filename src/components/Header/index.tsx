@@ -12,7 +12,7 @@ export function Header({ path }: HeaderProps) {
     <Flex
       as="header"
       w="100%"
-      maxWidth={1440}
+      maxWidth={1140}
       h="100"
       mx="auto"
       align="center"

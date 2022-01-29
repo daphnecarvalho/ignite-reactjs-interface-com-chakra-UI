@@ -27,7 +27,7 @@ export function SlideItem({ schema, title, subtitle }: ContinentProps) {
           }}
         >
           <Heading 
-            fontSize={["2xl", "5xl"]}
+            fontSize={["30px", "70px"]}
             color="gray.50" 
             fontWeight="700"
           >
@@ -36,7 +36,7 @@ export function SlideItem({ schema, title, subtitle }: ContinentProps) {
           <Text 
             fontWeight="bold" 
             color="gray.100" 
-            fontSize={["sm","2xl"]}
+            fontSize={["24px", "50px"]}
             mt={["12px", "4"]}
           >
             {subtitle}

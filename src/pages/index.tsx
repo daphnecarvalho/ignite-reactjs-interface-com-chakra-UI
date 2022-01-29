@@ -18,14 +18,13 @@ export default function Home({ continents }: HomeProps) {
         <title>Home | worldtrip</title>
       </Head>
 
-      <main>
+      <Box as="main">
         <BannerHome qnt_continents={!!continents ? continents.length : 0} />
         <TypesOfTrip />
 
-        <Box maxWidth={1440} mx='auto' mb={['6', '10']}>
+        <Box w="100%" mx='auto' mb={['6', '10']}>
           <Flex
             mx="auto"
-            px="6"
             align="center"
             justify-content="center"
             direction="column"
@@ -34,25 +33,26 @@ export default function Home({ continents }: HomeProps) {
               borderColor="gray.600"
               borderWidth="1px"
               borderStyle="solid"
-              w="90px" 
+              w="90px"
+              px="6"
             />
             <Flex py="8">
               <Flex direction="column">
-                <Text fontSize="36" align="center">
+                <Text fontSize={["30", "36"]} align="center">
                   Vamos nessa?
                 </Text>
-                <Text fontSize="36" align="center">
+                <Text fontSize={["30", "36"]} align="center">
                   Então escolha seu continente
                 </Text>
               </Flex>
             </Flex>
+            <Flex maxWidth={1440} w="100%" h="450px">
+              <Slide continents={continents} />
+            </Flex>
           </Flex>
 
-          <Box w="100%" h="450px">
-            <Slide continents={continents} />
-          </Box>
         </Box>
-      </main>
+      </Box>
     </>
   )
 }
