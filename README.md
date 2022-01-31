@@ -8,21 +8,27 @@ http://localhost:3000/
 
 # API Routes
 
-http://localhost:3333/continents
+<details>
+  <summary>
+    Route for continent data
+  </summary>
 
-http://localhost:3333/north_america
+  - http://localhost:3333/continents
+</details>
 
-http://localhost:3333/central_america
+<details>
+  <summary>
+    Routes for each continent
+  </summary>
 
-http://localhost:3333/south_america
-
-http://localhost:3333/europe
-
-http://localhost:3333/asia
-
-http://localhost:3333/africa
-
-http://localhost:3333/oceania
+  - http://localhost:3333/north_america
+  - http://localhost:3333/central_america
+  - http://localhost:3333/south_america
+  - http://localhost:3333/europe
+  - http://localhost:3333/asia
+  - http://localhost:3333/africa
+  - http://localhost:3333/oceania
+</details>
 
 ## Project commands
 

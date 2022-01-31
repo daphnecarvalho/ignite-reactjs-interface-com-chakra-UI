@@ -1,24 +1,19 @@
-import { Box, Flex, HStack, Image, Text } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 import ReactCountryFlag from "react-country-flag";
 
-interface CitiesPlus100ItemProps {
+interface CardCityItemrops {
   img: string;
-  name: string,
-  country: string,
-  flag: string,
+  name: string;
+  country: string;
+  flag: string;
 }
 
-export function CitiesPlus100Item({ 
-  img, 
-  name, 
-  country, 
-  flag 
-}: CitiesPlus100ItemProps) {
+export function CardCityItem({ img, name, country, flag }: CardCityItemrops) {
   return (
     <Flex direction="column" bg="white">
-      <Image 
-        src={img} 
-        alt={name} 
+      <Image
+        src={img}
+        alt={name}
         borderTopRadius="4"
         w="100%"
         h="173"
@@ -34,8 +29,12 @@ export function CitiesPlus100Item({
         borderBottomRadius="4"
       >
         <Flex direction="column">
-          <Text fontSize="xl" fontWeight="600" mb={3}>{name}</Text>
-          <Text color="gray.500" fontSize="md" fontWeight="500">{country}</Text>
+          <Text fontSize="xl" fontWeight="600" mb={3}>
+            {name}
+          </Text>
+          <Text color="gray.500" fontSize="md" fontWeight="500">
+            {country}
+          </Text>
         </Flex>
         <Flex fontWeight="600" lineHeight="9" align="center">
           <ReactCountryFlag

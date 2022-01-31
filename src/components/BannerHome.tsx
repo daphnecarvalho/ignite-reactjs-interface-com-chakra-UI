@@ -1,15 +1,25 @@
-import { Flex, Heading, Image, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  Image,
+  Stack,
+  Text,
+  useBreakpointValue,
+} from "@chakra-ui/react";
+import { ReactNode } from "react";
 
 interface BannerHomeProps {
-  qnt_continents: number;
+  title: string;
+  subtitle: string;
+  children: ReactNode;
 }
 
-export function BannerHome({ qnt_continents }: BannerHomeProps) {
+export function BannerHome({ title, subtitle, children }: BannerHomeProps) {
   const isAtLeastMediumScreen = useBreakpointValue({
     base: false,
     lg: true,
   });
-  
+
   return (
     <Flex
       maxWidth={1440}
@@ -20,6 +30,7 @@ export function BannerHome({ qnt_continents }: BannerHomeProps) {
       backgroundRepeat="no-repeat"
     >
       <Flex
+        maxWidth="620px"
         mt={["0", "20"]}
         direction="column"
         justify={["center", "space-between"]}
@@ -28,23 +39,13 @@ export function BannerHome({ qnt_continents }: BannerHomeProps) {
       >
         <Stack spacing="4">
           <Heading pl={["5", "19", "120"]} lineHeight="1.5">
-            {qnt_continents} Continentes, <br/>
-            infinitas possibilidades.
+            {title}
           </Heading>
-          <Text pl={["5", "19", "120"]}>
-            Chegou a hora de tirar do papel a viagem que você <br />
-            sempre sonhou.
-          </Text>
+          <Text pl={["5", "19", "120"]}>{subtitle}</Text>
         </Stack>
       </Flex>
       <Flex align="center" justifyContent="center" mx="auto">
-        {!!isAtLeastMediumScreen && <Image
-            position="absolute"
-            top={["0", "0", "0", "260", "180"]}
-            src='/assets/airplane.svg'
-            alt='avião'
-            maxWidth={["0", "0", "0", "301px", "431px"]}
-          />}
+        {!!isAtLeastMediumScreen && children}
       </Flex>
     </Flex>
   );

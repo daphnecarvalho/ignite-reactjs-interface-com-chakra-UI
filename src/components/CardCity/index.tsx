@@ -1,26 +1,22 @@
 import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
-import { CitiesPlus100Item } from "./CitiesPlus100Item";
 
-interface CitiesPlus100Props {
+import { CardCityItem } from "./CardItem";
+
+interface CardCityProps {
+  title: string;
   cities: {
     id: number;
-    cityName: string,
-    countryName: string,
-    countryCode: string,
+    cityName: string;
+    countryName: string;
+    countryCode: string;
     cityImage: string;
   }[];
 }
 
-export function CitiesPlus100({ cities }: CitiesPlus100Props) {
+export function CardCity({ title, cities }: CardCityProps) {
   return (
-    <Box
-      maxWidth={1440}
-      w="100%"
-      mx="auto"
-      pb="10"
-      px={["6", "8", "24"]}
-    >
-      <Heading pb="8">Cidades +100</Heading>
+    <Box maxWidth={1440} w="100%" mx="auto" pb="10" px={["6", "8", "24"]}>
+      <Heading pb="8">{title}</Heading>
 
       <SimpleGrid
         flex="1"
@@ -30,7 +26,7 @@ export function CitiesPlus100({ cities }: CitiesPlus100Props) {
         align="flex-start"
       >
         {cities.map((city) => (
-          <CitiesPlus100Item
+          <CardCityItem
             key={city.id}
             name={city.cityName}
             country={city.countryName}
